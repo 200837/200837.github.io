@@ -7,9 +7,23 @@
     </style>
     <!--<script>
         BG.src = (Math.floor(Math.random()*10) + ".png");
+    </script>-->
+    <script>
+        var system ={};  
+           var a = navigator.platform;       
+           system.win = a.indexOf("Win") == 0;  
+           system.mac = a.indexOf("Mac") == 0;  
+           system.x11 = (a == "X11") || (a.indexOf("Linux") == 0);     
+           if(system.win||system.mac||system.xll){//如果是电脑
+                BG.src = "./BackGround/webp/6.webp";
+           }
+           else{  //如果是手机
+                BG.src = "./BackGround/webp/7.webp";  
+           }
     </script>
-</head>-->
-<img id="BG" src="./BackGround/webp/1.webp">
+</head>
+
+<img id="BG" src="./BackGround/webp/6.webp">
 
 <h1>欢迎来到37的blog</h1>
 <hr>
