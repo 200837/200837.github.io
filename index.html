@@ -1,7 +1,13 @@
 <head>
+    <!-- require APlayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <!-- require MetingJS -->
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
     <!--MDUI库使用参考https://www.mdui.org/docs/-->   
     <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
     <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!-- <script src="../index.js"></script>   -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0">
@@ -25,7 +31,7 @@
         .BG{background: repeat-y;}
     </style>-->
 </head>
-<body class="mdui-drawer-body-left bg" background="./BackGround/6.gif" 
+<body class="mdui-drawer-body-left bg " background="./BackGround/6.gif" 
     style=" background-repeat:repeat-y;
     background-size:100% ;
     background-attachment: fixed;">
@@ -48,12 +54,22 @@
                   </svg>
                 查看github
             </a>
-            <a href="../HTML/list.html" class="mdui-list-item mdui-ripple">游览</a>
-            <a href="https://www.tapechat.net/uu/7Ip1ny/NVKPY8MH?uid=1163576" class="mdui-list-item mdui-ripple">友情链接(●ˇ∀ˇ●)</a>
+            <a href="../HTML/list.html" class="mdui-list-item mdui-ripple">&emsp;游览</a>
+            <a href="https://www.tapechat.net/uu/7Ip1ny/NVKPY8MH?uid=1163576" class="mdui-list-item mdui-ripple">&emsp;友情链接(●ˇ∀ˇ●)</a>
+            <p class="mdui-list-item mdui-ripple">
+                &emsp;UI使用:
+                MDUI<br>&emsp;https://www.mdui.org/
+            </p>
+            <a class="mdui-list-item mdui-ripple" href="https://www.vilipix.com/illust/96012570">&emsp;背景画师:eikaa<br>&emsp;(动图是我做哒)</a>
         </div>
     </div>
+    <!--内容-->
     <div>
-        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=230 height=86 src="https://music.163.com/outchain/player?type=2&id=573581063&auto=1&height=66"></iframe>
+        <meting-js server="netease" type="playlist" id="6827850859" autoplay="true" list-max-height=130px>
+        </meting-js>
     </div>
+
+   
+    
 
 </body>
