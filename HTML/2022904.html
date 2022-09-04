@@ -26,23 +26,7 @@
             z-index: 2;
         }
     </style>
-    <script language="javascript">
-        var interval = 1; 
-            function ShowCountDown(year,month,day,divname) 
-            { 
-            var now = new Date(); 
-            var endDate = new Date(year, month-1, day); 
-            var leftTime = endDate.getTime()-now.getTime(); //剩余毫秒
-            var leftsecond = parseInt(leftTime/1000); 
-              
-            var day1 = Math.floor(leftsecond/(60*60*24)); //剩余天
-            var hour = Math.floor((leftsecond-day1*24*60*60)/3600); //剩余时
-            var minute = Math.floor((leftsecond-day1*24*60*60-hour*3600)/60); //剩余分
-            var second = Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60); //剩余秒
-            var time = document.getElementById(divname); 
-            time.innerHTML = day1+" 天 "+hour+" 小时 "+minute+" 分 "+second+" 秒"+"<br>加油！";}  
-            window.setInterval(function(){ShowCountDown(2023,6,24,'divdown');}, interval);
-    </script>
+
     <!--<style>
         .BG{background: repeat-y;}
     </style>-->
@@ -77,33 +61,13 @@
                 MDUI<br>&emsp;https://www.mdui.org/
             </p>
             <a class="mdui-list-item mdui-ripple" href="https://www.vilipix.com/illust/96012570">&emsp;背景画师:eikaa<br>&emsp;(动图是我做哒)</a>
-            <a class="mdui-list-item mdui-ripple" href="../HTML/2022904.html">&emsp;学习歌单</a>
+            <a href=""></a>
         </div>
     </div>
     <!--内容-->
     <div>
-        <meting-js server="netease" type="playlist" id="6827850859" autoplay="true" list-max-height=90px>
+        <meting-js server="netease" type="playlist" id="696989124" autoplay="true" list-max-height=10000px>
         </meting-js>
     </div>
-
-
-
-    <div class="mdui-card">
-
-        <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
-        <div class="mdui-card-media">
-      
-        <!-- 卡片的标题和副标题 -->
-        <div class="mdui-card-primary">
-          <div class="mdui-card-primary-title">深圳中考倒计时</div>
-          <div class="mdui-card-primary-subtitle">物理懂了吗化学元素背了吗语文水浒传读了吗历史书看了吗数学会了吗...[doge]</div>
-        </div>
-      
-        <!-- 卡片的内容 -->
-        <div class="mdui-card-content" style="font-size: 23;">距离2023深圳市中考还有</div>
-        <div id="divdown" style="font-size: 30;"></div>
-      </div>
-      <img src="./HTML/image/index/学习.gif" >  
-      <p style="font-size: 5;">话说我还在敲代码哈哈哈(寒站将暂时停更咕咕咕)(反正没人看)</p>
 
 </body>
